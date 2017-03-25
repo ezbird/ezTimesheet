@@ -1,0 +1,63 @@
+.nav ul {
+  list-style: none;
+  background-color: #EEE;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  font-family: 'Open Sans', sans-serif;
+  font-weight:bold;
+  font-size: 15px;
+  line-height: 30px;
+  height: 30px;
+  border-bottom: 1px solid #888;
+}
+ 
+.nav a {
+  text-decoration: none;
+  color: navy;
+  display: block;
+  padding-left:10px;padding-right:10px;
+  transition: .4s background-color;
+}
+ 
+.nav a:hover {
+  background-color: #CCC;
+}
+ 
+.nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+ 
+@media screen and (min-width: 600px) {
+  .nav li {
+    padding-left:10px;padding-right:10px;
+    border-bottom: none;
+    height: 30px;
+    line-height: 30px;
+    font-size: 0.8em;
+    font-weight:bold;
+  }
+ 
+  /* Option 1 - Display Inline */
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+ 
+  /* Options 2 - Float
+  .nav li {
+    float: left;
+  }
+  .nav ul {
+    overflow: auto;
+    width: 600px;
+    margin: 0 auto;
+  }
+  .nav {
+    background-color: #444;
+  }
+  */
+}
